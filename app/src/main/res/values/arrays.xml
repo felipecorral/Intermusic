@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Array de secciones del menu-->
+    <string-array name="Tags">
+        <item>@string/principal</item>
+        <item>@string/ssecc_exclusivo</item>
+        <item>@string/ssecc_videos</item>
+        <item>@string/ssecc_ineditas</item>
+        <item>@string/ssecc_mapai</item>
+        <item>@string/ssecc_icvisitadas</item>
+        <item>@string/ssecc_guia</item>
+        <item>@string/ssecc_ituristica</item>
+        <item>@string/ssecc_tfalsas</item>
+        <item>@string/ssecc_formulario</item>
+        <item>@string/ssecc_enlaces</item>
+        <item>@string/salir</item>
+    </string-array>
+
+
+<!--    ArrayList<DrawerItem> items = new ArrayList<DrawerItem>();
+    items.add(new DrawerItem(tagTitles[0], R.mipmap.ic_local_activity_white_48dp));
+    items.add(new DrawerItem(tagTitles[1], R.mipmap.ic_slideshow_white_48dp));
+    items.add(new DrawerItem(tagTitles[2], R.mipmap.ic_music_video_white_48dp));
+    items.add(new DrawerItem(tagTitles[3], R.mipmap.ic_map_white_48dp));
+    items.add(new DrawerItem(tagTitles[4], R.mipmap.ic_map_white_48dp));
+    items.add(new DrawerItem(tagTitles[5], R.mipmap.ic_map_white_48dp));
+    items.add(new DrawerItem(tagTitles[6], R.mipmap.ic_map_white_48dp));
+    items.add(new DrawerItem(tagTitles[7], R.mipmap.ic_camera_enhance_white_48dp));
+    items.add(new DrawerItem(tagTitles[8], R.mipmap.ic_mail_outline_white_48dp));
+    items.add(new DrawerItem(tagTitles[9], R.mipmap.ic_work_white_48dp));-->
+
+
+
+
+    <string-array name="Image_Tags">
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_map_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+        <item>R.mipmap.ic_local_activity_white_48dp</item>
+    </string-array>
+
+
+    <!--Array de Ciudades-->
+    <string-array name="Ciudades">
+        <item>@string/ciudades_santiago</item>
+        <item>@string/ciudades_paris</item>
+        <item>@string/ciudades_amsterdam</item>
+        <item>@string/ciudades_berlin</item>
+        <item>@string/ciudades_praga</item>
+        <item>@string/ciudades_viena</item>
+        <item>@string/ciudades_venecia</item>
+        <item>@string/ciudades_florencia</item>
+        <item>@string/ciudades_barcelona</item>
+    </string-array>
+
+
+
+    <string-array name="Instrumentos">
+        <item>@string/instrumentos_violin</item>
+        <item>@string/instrumentos_oboe</item>
+    </string-array>
+
+    <string-array name="lat_ciudades">
+        <item>42.879985</item>
+        <item>48.8534100</item>
+        <item>52.3740300</item>
+        <item>52.5243700</item>
+        <item>50.0880400</item>
+        <item>48.2084900</item>
+        <item>45.4371300</item>
+        <item>49.879985</item>
+        <item>12.879985</item>
+    </string-array>
+
+    <string-array name="lon_ciudades">
+        <item>-8.544855</item>
+        <item>2.3488000</item>
+        <item>4.8896900</item>
+        <item>13.4105300</item>
+        <item>14.4207600</item>
+        <item>16.3720800</item>
+        <item>12.3326500</item>
+        <item>-1.544855</item>
+        <item>-23.544855</item>
+    </string-array>
+
+
+</resources>

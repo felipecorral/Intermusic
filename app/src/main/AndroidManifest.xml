@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.leitmotiv.a14felipecm.intermusic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDTsUaYE-9BLYbZSvf2CUnSouF0ut6Qxmk"/>
+
+        <activity android:name=".Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Principal" />
+        <activity
+            android:name=".Contenido_Exclusivo"
+            android:label="@string/title_activity_contenido__exclusivo" />
+        <activity
+            android:name=".Videos_Breves"
+            android:label="@string/title_activity_videos__breves" />
+        <activity
+            android:name=".Piezas_Ineditas"
+            android:label="@string/title_activity_piezas__ineditas" />
+        <activity
+            android:name=".Mapa_Interactivo"
+            android:label="@string/title_activity_mapa__interactivo" />
+        <activity
+            android:name=".Tomas_Falsas"
+            android:label="@string/title_activity_tomas__falsas" />
+        <activity
+            android:name=".Formulario"
+            android:label="@string/title_activity_formulario" />
+        <activity
+            android:name=".Colaboradores"
+            android:label="@string/title_activity_colaboradores"></activity>
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+</manifest>

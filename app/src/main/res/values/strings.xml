@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Intermusic</string>
+
+
+    <!--Menú principal de la app-->
+    <string name="ssecc_exclusivo">Contenido\nExclusivo</string>
+    <string name="ssecc_videos">Videos\nBreves</string>
+    <string name="ssecc_ineditas">Piezas\nInéditas</string>
+    <string name="ssecc_mapai">Mapa\nInteractivo</string>
+    <string name="ssecc_icvisitadas">Ciudades\nVisitadas</string>
+    <string name="ssecc_guia">Guía</string>
+    <string name="ssecc_ituristica">Información\nTurística</string>
+    <string name="ssecc_tfalsas">Tomas Falsas</string>
+    <string name="ssecc_formulario">Formulario</string>
+    <string name="ssecc_enlaces">Colaboradores</string>
+
+
+    <!--Formulario-->
+    <string name="form_nombre">Nombre</string>
+    <string name="form_correoe">Correo electrónico</string>
+    <string name="form_nacionalidad">Nacionalidad</string>
+    <string name="form_ciudad">Cuidad</string>
+    <string name="form_instrumento">Instrumento</string>
+    <string name="form_nivel">Nivel</string>
+    <string name="form_fechas">Fechas</string>
+    <string name="form_notas">Notas</string>
+    <string name="form_enviar">Enviar</string>
+
+    <!--Strings propios Menú lateral-->
+    <string name="action_settings">Menú Lateral</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="headlines">Encabezados de</string>
+    <string name="principal">Principal</string>
+    <string name="salir">Salir</string>
+
+
+    <!--Ciudades-->
+    <string name="ciudades_paris">París</string>
+    <string name="ciudades_amsterdam">Ámsterdam</string>
+    <string name="ciudades_berlin">Berlín</string>
+    <string name="ciudades_praga">Praga</string>
+    <string name="ciudades_viena">Viena</string>
+    <string name="ciudades_venecia">Venecia</string>
+    <string name="ciudades_florencia">Florencia</string>
+    <string name="ciudades_barcelona">Barcelona</string>
+    <string name="ciudades_santiago">Santiago de Compostela</string>
+
+    <!--Instrumentos-->
+    <string name="instrumentos_violin">Violón</string>
+    <string name="instrumentos_oboe">Oboe</string>
+
+    <!--Iconos FA -->
+    <string name="icon_links">&#xf02e;</string>
+
+
+    <string name="action_recycler_view">RecyclerView</string>
+
+
+
+
+
+    <!--Activitys-->
+    <string name="title_activity_contenido__exclusivo">Contenido Exclusivo</string>
+    <string name="title_activity_videos__breves">Videos Breves</string>
+    <string name="title_activity_piezas__ineditas">Piezas Inéditas</string>
+    <string name="title_activity_mapa__interactivo">Mapa Interactivo</string>
+    <string name="title_activity_tomas__falsas">Tomas Falsas</string>
+    <string name="title_activity_formulario">Formulario</string>
+    <string name="title_activity_colaboradores">Colaboradores</string>
+</resources>
