@@ -16,6 +16,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
+
 import java.util.ArrayList;
 
 public class Mapa_Interactivo extends FragmentActivity implements OnMapReadyCallback {
@@ -28,7 +30,7 @@ public class Mapa_Interactivo extends FragmentActivity implements OnMapReadyCall
     private ArrayList<LatLng> posiciones = new ArrayList<LatLng>();
     private String[] latitudes;
     private String[] longitudes;
-    final LatLng paris = new LatLng(48.8534100,2.3488000);
+    //final LatLng paris = new LatLng(48.8534100,2.3488000);
     int ciudad_focalizada =0;
     Spinner spciudades;
 
@@ -68,43 +70,40 @@ public class Mapa_Interactivo extends FragmentActivity implements OnMapReadyCall
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        //mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         for (int m=0; m<posiciones.size();m++){
             mMap.addMarker(new MarkerOptions()
                     .position(posiciones.get(m))
                     .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_favorite))
                     .title(localizacions[m]));
+            mMap.addPolyline(new PolylineOptions().geodesic(true)
+                            .add(posiciones.get(m))
+            );
         }
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posiciones.get(ciudad_focalizada), 3));
-
     }
 
     public void siguienteCiudad(View v){
-        if(ciudad_focalizada>=posiciones.size()){
+        if(ciudad_focalizada>=posiciones.size()-1){
             ciudad_focalizada =0;
         }else{
             ciudad_focalizada ++;
         }
-        cambiarMapa();
+        spciudades.setSelection(ciudad_focalizada);
     }
 
     public void anteriorCiudad(View v){
         if(ciudad_focalizada==0){
-            ciudad_focalizada =posiciones.size();
+            ciudad_focalizada =posiciones.size()-1;
         }else{
-            ciudad_focalizada --;
+            ciudad_focalizada--;
         }
-        cambiarMapa();
+        spciudades.setSelection(ciudad_focalizada);
     }
 
-
-
-
     public void cambiarMapa(){
-
-
         // Zoom in, animating the camera.
         mMap.animateCamera(CameraUpdateFactory.zoomOut(), 10000, null);
-
         // Zoom out to zoom level 10, animating with a duration of 2 seconds.
         setTitle(localizacions[ciudad_focalizada]);
         //mMap.animateCamera(CameraUpdateFactory.zoomTo(1), 12000, null);
@@ -118,5 +117,4 @@ public class Mapa_Interactivo extends FragmentActivity implements OnMapReadyCall
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition),10000,null);
         //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(paris,16));
     }
-    
 }

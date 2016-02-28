@@ -49,7 +49,6 @@
         <item>R.mipmap.ic_local_activity_white_48dp</item>
     </string-array>
 
-
     <!--Array de Ciudades-->
     <string-array name="Ciudades">
         <item>@string/ciudades_santiago</item>
@@ -62,8 +61,6 @@
         <item>@string/ciudades_florencia</item>
         <item>@string/ciudades_barcelona</item>
     </string-array>
-
-
 
     <string-array name="Instrumentos">
         <item>@string/instrumentos_violin</item>
@@ -78,8 +75,8 @@
         <item>50.0880400</item>
         <item>48.2084900</item>
         <item>45.4371300</item>
-        <item>49.879985</item>
-        <item>12.879985</item>
+        <item>43.7792500</item>
+        <item>41.3887900</item>
     </string-array>
 
     <string-array name="lon_ciudades">
@@ -90,8 +87,8 @@
         <item>14.4207600</item>
         <item>16.3720800</item>
         <item>12.3326500</item>
-        <item>-1.544855</item>
-        <item>-23.544855</item>
+        <item>11.2462600</item>
+        <item>2.1589900</item>
     </string-array>
 
 
